@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Basic Programming Course - 224 VB.Net Exercises with the solution.</title>
+    <meta name="description"
+        content="Visual Basic Programming Course. 224 VB.Net exercises with solution. Do you want to learn to program in VB.Net? Watch this!" />
+    <meta name="keywords" content="Course, programming, exercises, VB.Net, Visual Basic" />
+    <link rel="canonical" href="https://juanantonioripoll.github.io/visual-basic-programming-course/" />
+    <link href="https://juanantonioripoll.github.io/assets/img/favicon.png" rel="shortcut icon" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://juanantonioripoll.github.io/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://juanantonioripoll.github.io/dist/css/adminlte.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.juanantonioripoll.es",
+      "logo": "https://www.juanantonioripoll.es/assets/image/logo.png"
+    }
+    </script>
+    <meta property="og:image" content="https://juanantonioripoll.github.io/assets/img/logo_redondo_Vbnet.png" />
+    <style>
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            color: darkorange;
+            transition: color .5s;
+        }
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+                        <i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item ">
+                    <a title="Visual Basic (VB.Net) Programming Course"
+                        href="https://juanantonioripoll.github.io/visual-basic-programming-course/"
+                        class="nav-link">Home</a>
+                </li>
+            </ul>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-orange" role="button"
+                        href="https://juanantonioripoll.github.io/c-sharp-programming-course/"
+                        title="C# Programming Course" target="_blank">C# Sharp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-orange" role="button"
+                        href="https://juanantonioripoll.github.io/java-programming-course/"
+                        title="Java Programming Course" target="_blank">Java</a>
+
+                </li>
+                <li class="nav-item">
+                    <a id="btnFlagEspaña" runat="server" class="nav-link" role="button"
+                        href="https://www.juanantonioripoll.es" title="Spanish Version">
+                        <img alt="Juan A. Ripoll - Español"
+                            src="https://juanantonioripoll.github.io/assets/img/FlagEspaña.png"
+                            style="width: 35px; border-radius: 3px 3px 3px;" /></a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!--Aside-->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="https://juanantonioripoll.github.io/" class="brand-link">
+                <img id="imagelogo" runat="server" src="https://juanantonioripoll.github.io/assets/img/logo_trans.png"
+                    alt="Juan A. Ripoll" class="brand-image">
+                <span class="brand-text">Juan A. Ripoll</span>
+            </a>
+            <section class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="true">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-graduation-cap"></i>&nbsp;
+                                <p style="font-size: 0.9em;">VB.Net Programming Course<i
+                                        class="right fas fa-angle-left"></i></p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-1-first-contact-with-visual-basic"
+                                        title="Lesson 1 - First contact with Visual Basic - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;First contact with Visual Basic</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-2-flow-control"
+                                        title="Lesson 2 - Flow Control - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Flow Control</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-3-basic-data-types"
+                                        title="Lesson 3 - Basic Data Types - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Basic Data Types</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-4-arrays-structures-and-strings"
+                                        title="Lesson 4 - Arrays, Structures and Strings - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Arrays, Structures and Strings</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-5-functions"
+                                        title="Lesson 5 - Functions - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Functions</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-6-oop-object-oriented-programming"
+                                        title="Lesson 6 - OOP Object Oriented Programming - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;OOP Object Oriented Programming</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-7-oop-more-on-classes"
+                                        title="Lesson 7 - OOP More On Classes - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;OOP More On Classes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-8-file-management"
+                                        title="Lesson 8 - File Management - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;File Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-9-object-persistence"
+                                        title="Lesson 9 - Object Persistence - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Object Persistence</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-10-access-to-relational-databases"
+                                        title="Lesson 10 - Access To Relational Databases - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Access To Relational Databases</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-11-dynamic-memory-management"
+                                        title="Lesson 11 - Dynamic Memory Management - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Dynamic Memory Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-12-additional-libraries"
+                                        title="Lesson 12 - Additional Libraries - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Additional Libraries</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-star"></i>&nbsp;
+                                <p style="font-size: 0.9em;">Programming Levels<i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/visual-basic-exercises-for-beginners.aspx"
+                                        title="Visual Basic Exercises For Beginners - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;VB.Net Exercises For Beginners
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/visual-basic-exercises-for-intermediates.aspx"
+                                        title="Visual Basic Exercises For Intermediates - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;VB.Net Exercises For
+                                            Intermediates
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.juanantonioripoll.es/visual-basic-programming-course/visual-basic-exercises-for-advanced.aspx"
+                                        title="Visual Basic Exercises For Advanced - Visual Basic (VB.Net) Programming Course"
+                                        class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;VB.Net Exercises For Advanced
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-code"></i>&nbsp;<p style="font-size: 0.9em;">Programming languages<i
+                                        class="right fas fa-angle-left"></i></p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="https://juanantonioripoll.github.io/c-sharp-programming-course/"
+                                        title="C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;C# Course </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://juanantonioripoll.github.io/java-programming-course/"
+                                        title="Java Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Java Course</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!--End Aside-->
+        <!--Content-->
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="p-3">
+                    <h1>Visual Basic (VB.Net) Programming Course</h1>
+                    <p style="padding-top: 10px;">
+                        <b>Visual Basic (VB.Net)</b> <b>Programming Course</b> <b>224 </b>
+                        <b>Visual Basic (VB.Net)</b> Exercises with de solution.
+                        In this <b>Visual Basic (VB.Net).</b> <b>programming course</b>
+                        you will learn to program in one of the most used <b>programming languages</b>
+                        in the world, <b>Visual Basic (VB.Net).</b>
+                    </p>
+                    <ul>
+                        <li><b>12 <b>Visual Basic (VB.Net)</b> Lessons</b> with their exercises.</li>
+                        <li><b>224 <b>Visual Basic (VB.Net)</b> Exercises</b> with the solution.</li>
+                        <li><b>224</b> Very useful <b>Visual Basic (VB.Net)</b> <b>Sample Codes</b></li>
+                        <li>Completely <b>Free</b> and <b>without registration</b></li>
+                        <li>Suitable for <b>beginners</b> and <b>advanced.</b> Suitable <b>for everyone</b></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class=" card card-body ">
+                    <!--Visual Basic (VB.Net)-->
+                    <div class="p-3">
+                        <h2 class="h2" title="What is Visual Basic (VB.Net)">🤔 What is <b>Visual Basic (VB.Net)?</b>
+                        </h2>
+                        <p>
+                            <b>Visual Basic (VB)</b> is an event-driven programming language,
+                            developed by <a title="Alan Cooper" href="https://en.wikipedia.org/wiki/Alan_Cooper"
+                                target="_blank" rel="nofollow">Alan Cooper </a>for <a href="https://microsoft .com/"
+                                target="_blank" rel="nofollow">Microsoft.</a>
+                            This programming language is a dialect of <b>BASIC</b>, with important additions.
+                            Its first version was <b>introduced in 1991</b>, with the intention of simplifying
+                            programming.
+                            using a development environment.
+                            <br />
+                            <br />
+                            The last version was 6, <b>released in 1998</b>, for which <a href="https://microsoft.com/"
+                                target="_blank" rel="nofollow">Microsoft</a>
+                            extended support until <b>March 2008.</b><br />
+                            <br />
+                            In 2001 <a href="https://microsoft.com/" target="_blank" rel="nofollow">Microsoft.</a>
+                            proposed to abandon the
+                            development based on the Win32 API and move to a framework or common framework of libraries,
+                            independent of the version of the operating system <a title=".NET Framework"
+                                href="https://dotnet.microsoft.com/en-us/" target="_blank" rel="nofollow">.NET
+                                Framework</a>, through from <b>Visual Basic (VB.Net)</b>
+                            (and other <b>languages</b> like <b>C Sharp (C#)</b> for easy code transition between them);
+                            it was the successor to <b>Visual Basic 6.</b>
+                            <br />
+                            <br />
+                            Although <b>Visual Basic (VB.Net)</b> is general purpose, it also provides facilities for
+                            the
+                            <b>database application development</b> using <b>Data Access Objects, Remote Data Objects or
+                                ActiveX Data Objects.</b>
+                            <br />
+                            <br />
+                            <b>Visual Basic (VB.Net)</b> contains an integrated <b>development environment</b> or <a
+                                href="https://visualstudio.microsoft.com/ en /vs/" target="_blank"
+                                rel="nofollow">IDE</a>
+                            that integrates a text editor for <b>editing the source code, a debugger, a compiler (and
+                                linker)</b> and a <b>editor for graphical interfaces or GUIs.</b>
+                            More information can be found at <a href="https://es.wikipedia.org/wiki/Visual_Basic"
+                                target="_blank" rel="nofollow">Wikipedia</a>
+                        </p>
+                        <hr />
+                    </div>
+                    <!--Ranking-->
+                    <div class="p-3">
+                        <h2 class="h2" title="Popularity ranking for Visual Basic (VB.Net) programming language">
+                            🎖️Popularity Ranking for <b>Visual Basic (VB.Net)</b> <b>Programming Language</b></h2>
+                        <p>
+                            According to <a title="TIOBE" href="https://www.tiobe.com/tiobe-index/" target="_blank"
+                                rel="nofollow">TIOBE</a>, a company
+                            that is in charge of measuring the popularity of <b>programming languages</b>, the <b>Visual
+                                Basic (VB.Net).</b>
+                            <b>programming language</b> holds the <b>FIFTH position.</b> In other words, <b>Visual Basic
+                                (VB.Net).</b>
+                            is the <b>fifth most widely used programming language</b> in the world today.
+                        </p>
+                        <h4 title="Ranking of programming languages" class="h4"><b>Ranking</b> as of March 2023</h4>
+                        <ul>
+                            <li>1.- Python</li>
+                            <li>2.- C</li>
+                            <li>3.- <a title="Java Programming Course"
+                                    href="https://juanantonioripoll.github.io/java-programming-course/"
+                                    target="_blank">Java</a></li>
+                            <li>4.- C++</li>
+                            <li>5.- <a title="C# Sharp Programming Course"
+                                    href="https://juanantonioripoll.github.io/c-sharp-programming-course/"
+                                    target="_blank">C# Sharp</a></li>
+                            <li><b>6.- Visual Basic (VB.Net)</b></li>
+                        </ul>
+                        <hr />
+                    </div>
+                    <!--Qué puedo aprender-->
+                    <div class="p-3">
+                        <h2 class="h2" title="What can I learn from this Visual Basic (VB.Net) programming course?">
+                            🧑‍🏫 What can I learn from this <b>Visual Basic (VB.Net)</b> <b>Programming Course?</b>
+                        </h2>
+                        <p>
+                            This <b>FREE</b> <b>Visual Basic (VB.Net)</b> <b>programming course!</b>
+                            It covers all the aspects necessary for <b>programming</b> in <b>Visual Basic (VB.Net)</b>
+                            up to the present. You will learn in an easy and fast way all the functionalities
+                            of this highly acclaimed <b>programming language</b> that is <b>Visual Basic (VB.Net)</b>.
+                            <br />
+                            <br />
+                            These are the notions of the <b>Visual Basic (VB.Net)</b> <b>programming language</b>
+                            that you will learn with this <b>programming course</b>.
+                        </p>
+                        <ul>
+                            <li>First contact with <b>Visual Basic (VB.Net).</b> Operations, Averages, Formats...</li>
+                            <li>Flow control. If..Then, Do while, For next...</li>
+                            <li>Basic data types.</li>
+                            <li>Arrays, structures, and strings.</li>
+                            <li>Functions.</li>
+                            <li>Object-oriented programming.</li>
+                            <li>Classes.</li>
+                            <li>File management.</li>
+                            <li>Object persistence.</li>
+                            <li>Relational databases.</li>
+                            <li>Dynamic memory management.</li>
+                            <li>Some additional libraries.</li>
+                        </ul>
+                        <hr />
+                    </div>
+                    <!--Ventajas-->
+                    <div class="p-3">
+                        <h2 class="h2"
+                            title="What advantages will I get by taking the Visual Basic (VB.Net) programming course?">
+                            🏆 What advantages will I get by taking the <b>Visual Basic (VB.Net)</b> <b>Programming
+                                Course?</b></h2>
+                        <p>
+                            The advantages that you will obtain by taking this <b>programming course</b> are:
+                        </p>
+                        <ul>
+                            <li>You will gain <b>higher knowledge</b> of <b>Visual Basic (VB.Net).</b></li>
+                            <li>He will become a <b>professional in high demand</b> by companies.</li>
+                            <li>It's <b>free</b></li>
+                            <li>It is <b>No login</b></li>
+                            <li>It is <b>Online</b></li>
+                            <li>Learn <b>at your own pace</b></li>
+                            <li>Access <b>wherever you want</b></li>
+                            <li>Access <b>whenever you want</b></li>
+                            <li>Access <b>as you like</b></li>
+                            <li><b>Non Stop</b> 24/7</li>
+                        </ul>
+                        <p>
+                            With the knowledge acquired by taking this <b>programming course,</b>
+                            you will become one of the professionals most in demand by companies. According to
+                            <a href="https://www.glassdoor.es/" target="_blank" rel="nofollow">Glassdoor</a>,
+                            a <b>Visual Basic (VB.Net)</b> programmer earns an average of <b>€32,073</b> per year in
+                            Spain.
+                            In the United States, the figure shoots up to <b>$88,000</b> per year.
+                        </p>
+                        <hr />
+                    </div>
+                    <!--Quieres aprender-->
+                    <div class="p-3">
+                        <h2 class="h2" title="Do you want to learn to program in Visual Basic (VB.Net)? Start now!">🤔
+                            Do you want to <b>learn to program</b> in <b>Visual Basic (VB.Net)?</b> <b>Start now!</b>
+                        </h2>
+
+                        <p>
+                            In this <b>programming course </b><b>Visual Basic (VB.Net)</b> you have everything you need
+                            to
+                            learn <b>programming</b> <b>Visual Basic (VB.Net)</b> in an easy and fast way, and what is
+                            best... <b>at your own pace!</b> Oh!
+                            and remember, <b>wherever you want, when you want, however you want.</b>
+                        </p>
+                        <h4 class="h4">1.- <b>What do you need!</b></h4>
+                        <ul>
+                            <li><a href="https://visualstudio.microsoft.com/es/vs/" target="_blank"
+                                    rel="nofollow">Visual Studio 2022 - Community Edition</a></li>
+                        </ul>
+                        <p>
+                            You will need the <a href="https://visualstudio.microsoft.com/es/vs/" target="_blank"
+                                rel="nofollow">Microsoft Visual Studio 2022 - Community Edition.</a>
+                            <a href="https://visualstudio.microsoft.com/es/vs/" target="_blank" rel="nofollow">IDE</a>.
+                            Why this edition? Of course you can install any edition you want, it's just that this
+                            edition is <b>FREE!</b> 😊
+                        </p>
+                        <h4 class="h4">2.- Lessons in <b>Visual Basic (VB.Net)</b> <b>programming </b></h4>
+                        <p>
+                            Below are all the lessons in this <b>programming course</b> <b>Visual Basic (VB.Net).</b>
+                            Along with the number of exercises per lesson. Click on any of them.
+                        </p>
+
+                        <div class="card p-3">
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-1-first-contact-with-visual-basic"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 1 - First contact with Visual Basic - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;14
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;First contact with Visual Basic
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-2-flow-control"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 2 - Flow Control - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;34
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Flow Control
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-3-basic-data-types"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 3 - Basic Data Types - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;26
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Basic Data Types
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-4-arrays-structures-and-strings"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 4 - Arrays, Structures and Strings - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;25
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Arrays, Structures and Strings
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-5-functions"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 5 - Functions - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;37
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Functions
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-6-oop-object-oriented-programming"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 6 - OOP Object Oriented Programming - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;7
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;OOP Object Oriented Programming
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-7-oop-more-on-classes"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 7 - OOP More On Classes - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;13
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;OOP More On Classes
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-8-file-management"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 8 - File Management - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;41
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;File Management
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-9-object-persistence"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 9 - Object Persistence - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;4
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Object Persistence
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-10-access-to-relational-databases"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 10 - Access To Relational Databases - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;3
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Access To Relational Databases
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-11-dynamic-memory-management"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 11 - Dynamic Memory Management - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;13
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Dynamic Memory Management
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;"
+                                        class="list-group-item list-group-item-action"
+                                        href="https://www.juanantonioripoll.es/visual-basic-programming-course/lesson-12-additional-libraries"
+                                        data-toggle="tooltip" data-placement="left"
+                                        title="Lesson 12 - Additional Libraries - Visual Basic (VB.Net) Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises"
+                                            data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;10
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Additional Libraries
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Otros lenguajes de programación-->
+                    <div class="p-3">
+                        <h2>Learn in other <b>programming languages</b></h2>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="https://juanantonioripoll.github.io/java-programming-course/" target="_blank"
+                                    style="cursor: pointer;" title="Java Programming Course">
+                                    <div class="bg-dark text-center rounded" style="padding: 10px 10px 10px 10px;">
+                                        <h3 class="h3 text-orange" title="Java Programming Course"><b>Java</b>
+                                            Programming Course</h3>
+                                        <p>You can also learn <b>Java</b> with the <b>programming course</b></p>
+                                        <h4 class="h4"><b>100% FREE</b></h4>
+                                        <p><b>Programming course in</b> <b>Java</b></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://juanantonioripoll.github.io/c-sharp-programming-course/"
+                                    target="_blank" style="cursor: pointer;" title="C# Programming Course">
+                                    <div class="bg-dark text-center rounded" style="padding: 10px 10px 10px 10px;">
+                                        <h3 class="h3 text-orange" title="C# Programming Course">
+                                            <b>C#</b> Programming Course
+                                        </h3>
+                                        <p>You can also learn <b>C#</b> with the <b>programming course</b></p>
+                                        <h4 class="h4"><b>100% FREE</b></h4>
+                                        <p><b>Programming course in</b> <b>C#</b></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--End Content-->
+        <!--Footer-->
+        <footer class="main-footer light-mode">
+            <div class="row">
+                <div class="col-12 form-inline ">
+                    <label style="font-weight: 400;">
+                        Juan A. Ripoll - Full Stack Developer - Software & Systems. &copy; 2023 All rights reserved.
+                        Since 1998.
+                        <a href="https://www.juanantonioripoll.es/en-en/legal.aspx" title="Legal Conditions"
+                            class="text-orange">&nbsp;Legal
+                            Conditions.</a></label>
+                </div>
+            </div>
+        </footer>
+        <!--End Footer-->
+        <div class="control-sidebar-bg">
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://juanantonioripoll.github.io/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://juanantonioripoll.github.io/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://juanantonioripoll.github.io/dist/js/adminlte.js"></script>
+</body>
+
+</html>
